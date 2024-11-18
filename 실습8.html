@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습8</title>
+    <style>
+        input#second:checked[type="checkbox"]{
+            accent-color: yellow;
+
+        }
+        input#star:checked[type="checkbox"]{
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: 1px solid #999;
+            appearance: none;
+            cursor: pointer;
+            background-color: orange;
+            content: "";
+
+        }
+
+        #star:checked + .circle:after{ opacity: 1; }
+
+        input#heart:checked[type="checkbox"]{
+            accent-color: red;
+            color: black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="first"/>
+    <input type="checkbox" id="second" />
+    <input type="checkbox" id="star" />
+    <input type="checkbox" id="heart" />   
+</body>
+</html>

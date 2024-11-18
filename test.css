@@ -1,0 +1,71 @@
+.orange {
+    color: orange
+}
+
+.orange1 {
+    color: yellow;
+}
+
+#orange2 {
+    color: yellow;
+    background-color: blue;
+}
+
+.class {
+    color: white;
+    background-color: grey;
+}
+
+#first {
+    background-color: blue;
+}
+
+.second {
+    background-color: green;
+}
+
+span.class1 {
+    color: blue;
+}
+
+div.class2 {
+    color: pink;
+}
+
+ul>.cl1 {
+    color: blueviolet;
+}
+
+ul>.cl2 {
+    color: aquamarine;
+}
+
+.cl3 {
+    color: aqua;
+}
+
+#tiger+li {
+    background-color: skyblue;
+}
+
+li.lion~li {
+    background-color: orange;
+}
+
+#tiger {
+    background-color: yellow;
+}
+
+ul>.lion {
+    background-color: greenyellow;
+    font-weight: 700;
+}
+
+.lion {
+    color: sienna;
+
+}
+
+p.lion {
+    background-color: red;
+}

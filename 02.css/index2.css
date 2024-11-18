@@ -1,0 +1,58 @@
+/* 
+    *: 전체 선택자
+*/
+/* *{
+    color: red;
+} */
+/* 
+    태그명: 태그 선택자
+*/
+h1{
+ background-color: pink;
+}
+
+/* p{
+    background-color: violet;
+} */
+
+.second{
+    background-color: aqua;
+}
+
+.small{
+    font-size: 20px;
+}
+
+.big{
+ color: blue;
+ font-size: 40px;
+}
+/*  
+    #아이디명 : 아이디 선택자
+*/
+
+#first{
+    background-color: lightgreen;
+}
+
+/* 
+    id, class 차이
+    class : 그룹
+    id: 고유
+*/
+
+.hello{
+    color: green;
+}
+.hi{
+    color: blue;
+}
+
+#my-hello{
+    color: red;
+}
+
+#one{
+    color: violet;
+}
+/* one - two 두개 입력해서 적용 안됨 */

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="test.css">
+        <style>
+            h1:hover{
+                color: red;
+            }
+            a:active{
+                background-color: blue;
+            }
+            .lion:hover{
+                color: palevioletred;
+            }
+            #btn:active{
+                background-color: aqua;
+            }
+            #txt:focus{
+                background-color: green;
+            }
+            #text:focus{
+                background-color: orange;
+            }
+
+            .fruits span:first-child {
+                color: purple;
+            }
+            
+            .fruits *:nth-child(2) {
+                color: aquamarine;
+            }
+
+            .fruits *:nth-child(5) {
+                color: red;
+            }
+
+            .fruits div:last-child {
+                color: green;
+            }
+
+            .fruits *:nth-child(3n) {
+                color: brown;
+            }
+
+            .fruits *:not(p) {
+                color: pink;
+            }
+            
+            .stripes *:nth-child(n+1){
+                background-color: navy;
+                color: white;
+            }
+
+            .stripes *:nth-child(4n+2){
+                background-color: yellow;
+                color: black;
+                
+            }
+            
+            .box::before{
+                content: "택시";
+            }
+
+            .box::after{
+                content: "빨리";
+            }
+
+            [disabled]{
+                background-color: red;
+            }
+            [placeholder="이름"]{
+                background-color: orange;
+            }
+
+            .blue *:not([placeholder]){
+                background-color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            안녕하세요!
+        </h1>
+        <h3> 
+            Hello world!
+        </h3>
+        <p>
+            오늘의 날씨는 맑음! </br><hr>
+            내일은 흐릴 예정입니다 
+        </p>
+        <ul>
+            <li>
+                사과
+            </li>
+            <li>
+                바나나
+            </li>
+            <li>
+                배
+            </li>
+        </ul>
+        <ol>
+            <li>
+                사과
+            </li>
+            <li>
+                바나나
+            </li>
+        </ol>
+
+        <p>
+          <b>안녕하세요</b>  
+        </p>
+        <img src="C:\Users\jylee\OneDrive\사진\pung.jpg">
+        <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fko%2Fimages%2Fsearch%2F%25ED%2581%25B0%2520%25EC%259D%25B4%25EB%25AF%25B8%25EC%25A7%2580%2F&psig=AOvVaw2ocAmvVt0BOICd9rWWlb68&ust=1731552246371000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDzpvak2IkDFQAAAAAdAAAAABAE"
+        target="_blank">Click</a>
+        <input type="button" value="button">
+        <div>
+            <button>button</button>
+        </div>
+        <div>
+            <textarea>값을 입력하시오</textarea>
+            <input type="text">
+            <input type="password"><br>
+            <input type="checkbox"><br>
+            <input type="radio" name="radio1">
+            <label for="radio1">Option 1</label></br>
+            <br>
+            <input type="date">
+        </div>  
+        <select>
+            <option>
+                네이버
+            </option>
+            <option>
+                구글
+            </option>
+            <option>
+                다음
+            </option>
+            <option>
+                지메일
+            </option>
+        </select>
+        <table border="1">
+            <caption>테이블 제목</caption>
+            <tr>
+                <td colspan="3">1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td >4</td>
+                <td rowspan="2">5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+    </body>
+    
+    <div style="background-color: black; color: white; width: 100px; text-align: center; ">무지개</div>
+    <body>
+        <div style="background-color: red; width: 100px; height: 100px;"></div>
+        <div style="background-color: orange; width: 200px; height: 100px;"></div>
+        <div style="background-color: yellow; width: 300px; height: 100px;"></div>
+        <div style="background-color: green; width: 400px; height: 100px;"></div>
+        <div style="background-color: blue; width: 500px; height: 100px;"></div>
+        <div style="background-color: navy; width: 600px; height: 100px;"></div>
+        <div style="background-color: purple; width: 700px; height: 100px;"></div>
+    </body>
+    <body>
+        <div>
+            <ul>
+                <li>사과</li>
+                <li>딸기</li>
+                <li>바나나</li>
+            </ul>
+            <div>당근</div>
+            <p>토마토</p>
+            <span class="orange">오렌지</span>
+            <p class="orange1">오렌지</p>
+            <span id="orange2">오렌지</span>
+        </div>
+        <div class="class">
+        <h1>기본 선택자 연습하기</h1>
+        <p>기본 선택자 연습을 해보아요!</p>
+        <span>안녕하세요</span>
+        <ol>
+            <li id="first">1</li>
+            <li class="second">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        </div>
+    </body>
+    <body>
+        <div>
+            <ul>
+                <li class="cl1">사과</li>
+                <li class="cl2">딸기</li>
+                <li class="cl3">오렌지</li>
+                <li>바나나</li>
+            </ul>
+            <div class="class2"> 당근</div>
+            <div class="class2"> 당근1</div>
+            <div class="class2"> 당근2</div>
+            <span class="class1">오렌지</span>
+        </div>
+    </body>
+    <body>
+        <h1>복합선택자 사용 연습</h1>
+        <p>동물원에 왔어요</p>
+        <div class="zoo">
+            <ul>
+                <span>여긴 사파리</span>
+                <li>곰</li>
+                <li id="tiger">호랑이</li>
+                <li>팬더</li>
+                <span class="lion">사자1</span>
+                <li class="lion">사자2</li>
+                <li>사육사 sarah</li>
+                <li>사육사 세령</li>
+            </ul>
+            <span class="lion">사파리 밖의 사자</span>
+        </div>
+        <p class="lion">야생의 사자</p>
+    </body>
+    <body>
+        <a href="https://www.naver.com/">네이버</a>
+        <input id="btn" type="button" value="테스트 버튼">
+        <input id="txt" type="text">
+        <div>
+            <h1>안녕하세요</h1>
+            <a href="https://www.naver.com/">네이버</a>
+            <input id="text"  type="text">
+        </div>
+
+        <div class="fruits">
+            <span>딸기</span>
+            <span>바나나</span>
+            <div>오렌지</div>
+            <p>망고</p>
+            <h3>사과</h3>
+            <div>오렌지</div>
+            <div>오렌지</div>
+            <div>오렌지</div>
+            <div>오렌지</div>
+        </div>
+
+        <div class="stripes">
+            <div>navy</div>
+            <div>yellow</div>
+            <div>navy</div>
+            <div>navy</div>
+            <div>navy</div>
+            <div>yellow</div>
+            <div>navy</div>
+            <div>navy</div>
+            <div>navy</div>
+            <div>yellow</div>
+            <div>navy</div>
+            
+        </div>
+        <div class="box">
+            여기요!
+        </div>
+        <div class="blue">
+            <input type="text" placeholder="이름">
+            <input type="password" value="pw">
+            <input type="text" value="000-0000-0000">
+            <input type="text" placeholder="핸드폰">
+            <input type="text" placeholder="주민번호" disabled>
+        </div>
+        
+    </body>
+
+    
+</html>

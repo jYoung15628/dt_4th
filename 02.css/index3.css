@@ -1,0 +1,40 @@
+/* 하위(후손) 선택자 : 공백(띄어쓰기) */
+body section{
+    /* 테두리(경계선) : 두께 선스타일 선색상 */
+    border: 1px solid blue;
+}
+
+body section h2{
+    border: 1px solid green;
+}
+
+/* 자식 선택자 : <(X) >(o) */
+
+.first > h2{
+color: white;
+background-color: navy;
+}
+
+/* 인접 형제 선택자 : + */
+/* 주의) 위플래시 라는 아이디를 갖는 요소 바로 뒤에 "li" */
+#위플래시 + li {
+    background-color: aqua;
+}
+
+/* 일반 형제 선택자 : ~ */
+#위플래시 ~ li {
+    color: brown;
+}
+
+
+/* css 색상 */
+/* 
+    #1. 색상 키워드 : red, blue, white ....
+    
+    #2. 16진수 코드 (#XXXXXXX)
+        0~9, a, b, c, d, e, f : 16개의 기호로 표현
+        - #fffffff : Red(ff), Green(ff), blue(ff) -> white
+    
+    #3. rgb(0~255, 0~255, 0~255) 
+
+*/

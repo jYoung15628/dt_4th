@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습8</title>
+    <style>
+        input#second:checked[type="checkbox"]{
+            accent-color: yellow;
+
+        }
+        input#star:checked[type="checkbox"]{
+            border-radius: 50%;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            border: 1px solid #999;
+            appearance: none;
+            background-color: orange;
+
+        }
+
+        
+        input#heart:checked[type="checkbox"]{
+            accent-color: red;
+            color: black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .checkbox4 + label{
+            position: relative;
+        }
+
+        .checkbox4 input[type="checkbox"].checkbox4{
+            display: none;
+        }
+
+        .checkbox4 input[type="checkbox"].checkbox4 + label:before{
+            display: inline;
+            width: 30px;
+            height: 30px;
+            border: 2px;
+            background-color: #a00;
+            border-radius: 50%;
+          
+        }
+
+        .checkbox2 + label{
+        position: relative;
+        }
+        .checkbox input[type="checkbox"].checkbox2{
+        display: none;
+        }
+        .checkbox input[type="checkbox"].checkbox2 + label:before { /* 체크박스 배경 */
+        display: inline-block;
+        content: '';
+        width: 1.25em; 
+        height: 1.25em;
+        border: 2px solid #a66;
+        background-color: #a00;
+        border-radius: 50%;
+        margin: 0 5px -6px 0;
+        }
+        .checkbox input[type="checkbox"].checkbox2 + label:after { /* 체크 마크 */
+            position: absolute; 
+            left: 4px;
+            content: '✮'; /* 체크 마크 ASCii 문자 */
+            font-size: 1.5em;
+            line-height: 0.8;
+            color: #a88;
+            transition: all .3s;
+        }
+
+
+        [type="checkbox"].checkbox2 + label:after { /* 기본 상태 - 투명에 크기 0 */
+            opacity: 0;
+            transform: scale(0);
+        }
+        [type="checkbox"]:checked.checkbox2 + label:after { /* 체크 상태 - 불투명에 크기 1 */
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="first"/>
+    <input type="checkbox" id="second" />
+    <input type="checkbox" id="star" class="star"/>
+    <div class="checkbox3">
+    <input type="checkbox" name="heart" id="heart" value="2" class="checkbox4" />
+    <label for="heart"></label>
+    </div>
+    <div class="checkbox">
+        <input type="checkbox" name="check2" id="check2" value="2" class="checkbox2">
+        <label for="check2"></label>
+    </div>
+</body>
+</html>

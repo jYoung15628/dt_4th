@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+#menu {
+    background-color: grey;
+    color: black;
+    line-height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu>ul>li {
+    float: left;
+    width: 140px;
+    position: relative;
+}
+
+#menu>ul>li>ul {
+    width: 130px;
+    display: none;
+    position: absolute;
+    font-size: 14px;
+    background: grey;
+}
+
+
+#menu>ul>li:hover>ul {
+    display: block;
+}
+
+
+
+#menu>ul>li>ul>li:hover {
+    background: rgb(211, 208, 203);
+    transition: ease 1s;
+}

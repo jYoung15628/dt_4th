@@ -1,0 +1,35 @@
+ .box {
+    position: absolute;
+ }
+
+
+ .box:nth-child(1) {
+    
+    left: 10%;
+    top: 21%;
+    z-index: 3;
+    transform: skew(0deg, 30deg);
+ }
+
+ .box:nth-child(2) {
+    
+    left: 20%;
+    top: 18%;
+    z-index: 2;
+    transform: skew(0deg, 30deg);
+ }
+
+ .box:nth-child(3){
+    
+    left: 30%;
+    top: 15%;
+    z-index: 1;
+    transform: skew(0deg, 30deg);
+ 
+}
+
+.box:hover {
+     transform: rotate(1deg);
+     transition: transform 1s;
+ }
+

@@ -60,7 +60,7 @@ console.log('--------------');
 
 // #4. 논리 연산자
 // ! : not (참 -> 거짓, 거짓 -> 참)
-// && : and (여러 값 중 모두가 참 -> 참)
+// && : and (여러 값 중 모두가 참 -> 참) 
 // || : or (여러 값 중 하나라도 참 -> 참)
 console.log(!true); // false
 console.log(!false); // true
@@ -111,7 +111,7 @@ console.log(result2); // 21
 console.log(num2); // 21
 
 // ##3. 연산자 줄여쓰기
-// +=, -= 연산자를 더 자주 씀!
+// +=,  -= 연산자를 더 자주 씀!
 console.log((num += 1)); // 12
 console.log((num2 -= 1)); // 20
 console.log((num *= num2)); // 240  // num = 240

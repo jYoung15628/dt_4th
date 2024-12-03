@@ -97,33 +97,37 @@ function music2 (name, title){
 music2('악뮤', '후라이의 꿈');
 
 // #3. 화살표 함수 (arrow function) (ES6부터 지원)
-// 함수 표현식의 축약형. 간결ㄹ하게 정의
+// 함수 표현식의 축약형. 간결하게 정의
 // 단일 표현식의 경우에는 중괄호와 return 키워드 생략 가능!
 // 코드가 길어진다면(여러줄) 중괄호와 return 키워드 명시!
 // - 함수명 쓰지 않음.
 
 // 일반형 (단일 표현식)
-function square(x){
-    return x * x;
-}
+// function square(x){
+//     return x  * x;
+// }
+// console.log(squre(2));
 
 // 축약형
-const square = (x) => x * x;
-console.log(square(3)); //9
+const square1 = (x) => x ** 2 ;
+// const square1 = (x) => x * x ; (같음!) 
+// ** 뒤에 무조건 값(제곱값)을 넣어줘야 함 !
+console.log(square1(3));
+const square = (x, y) => x * y;
+console.log(square(3,4)); //9
 
 // 일반형 (여러줄)
-function triangle(base, height){
-    const area = (base * height) /2; 
-    // area : 변수 base, height: 메개변수 변수에 메개변수 값을 담아서  traingle 함수에서 호출!
-    return area;
-}
+// function triangle(base, height){
+//     const area = (base * height) /2; 
+//     // area : 변수 base, height: 메개변수 변수에 메개변수 값을 담아서  traingle 함수에서 호출!
+//     return area;
+// }
 
 // 축약형
 const triangle = (base, height) => {
     const area = (base * height) / 2 ;
     return area;
 };
-console.log(triangle(3, 4)); //6
 
 // * 호이스팅(hoisting) -> 함수, 변수
 // - JS에서 변수 및 함수 선언이 해당 범위의 맨 위로 끌어올려지는 현상.
@@ -145,8 +149,10 @@ sayHello5();
 // - Why?
 // - 변수에 함수가 할당되기 때문에 그 이후에만 호출 가능!
 
-//sayHello6(); // referuenceError!
-// const sayHello6 = () => {
-//     console.log('hello2 ~~~~');
-// };
-const sayHello6 = () => console.log('hello2 ~~~~'); 
+// sayHello6(); // referuenceError! 변수에 함수를 할당되기  때문에 이전 호출 불가능!
+const sayHello6 = () => {
+    console.log('hello2 ~~~~');
+};
+sayHello6(); // 이후 호출은 가능!
+
+const sayHello7 = () => console.log('hello2 ~~~~'); 

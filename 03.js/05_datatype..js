@@ -11,7 +11,7 @@
 let text = '안녕하세요!';
 let text2 = '하이!';
 let gender = '남성';
-
+                 
 console.log(text);
 console.log(text2);
 console.log(text + text2);
@@ -94,8 +94,8 @@ console.log(ex + am - s);
 // 배열의 길이(크기 length) : 요소의 개수와 동일
 
 
-const fruits = ['orange', 'pinapple', 'grape', 'apple'];
-console.log(fruits);//['orange', 'pinapple', 'grape', 'apple']
+const fruits = ['orange', 'pineapple', 'grape', 'apple'];
+console.log(fruits);//['orange', 'pineapple', 'grape', 'apple']
 console.log(fruits[0]);// orange ///fruits 배열의 위치가 0인 요소 출력
 console.log(fruits[1]);
 console.log(fruits[2]);

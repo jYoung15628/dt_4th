@@ -53,7 +53,7 @@ console.log(str.indexOf()); //-1 반환
 // - 위치(index) 0 부터 시작
 // - slice(start, end) : start ~ end - 1까지 자르기
 console.log(str.slice(10)); // 10번 위치의 글자 ~ 끝
-console.log(str.slic(1,5)); // appy - start (1) ~ end-1 (4) 까지 자르기
+console.log(str.slice(1,5)); // appy - start (1) ~ end-1 (4) 까지 자르기
 console.log(str.slice(-6)); // rthdat- 뒤에서 6번째 위치의 글자 ~ 끝 ,뒤에서 순서를 셀때는 1부터 (0부터 아님!) //시험
 
 console.log('str >>>> ', str);

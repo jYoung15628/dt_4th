@@ -54,7 +54,7 @@ for (let num = 0; num<icecreams.length; num++){
     rank.innerText = `Top ${num + 1}`;
     ice.textContent = icecreams[num];
 
-    section.append(box);
     box.append(img, rank, ice);
+    section.append(box);
     
 };

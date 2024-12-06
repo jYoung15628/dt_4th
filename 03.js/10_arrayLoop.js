@@ -54,16 +54,16 @@ for (let a =0; a < arr.length; a++){
 
 const alphabets = ['a', 'b', 'c', 'd'];
 
-// alphabets.forEach(function (alpha){
-//     // alpha : currentValue를 의미 = 반복하고 있는 현재 요소
-//     console.log('Element: ', alpha);
-// });
+alphabets.forEach(function(alpha){
+    // alpha : currentValue를 의미 = 반복하고 있는 현재 요소
+    console.log('Element: ', alpha);
+});
 
-// alphabets.forEach(function (alpha, idx) {
-//     // alpha : currentValue를 의미 = 반복하고 있는 현재 요소
-//     // idx : currentValue의 인덱스 (위치)
-//     console.log(`ElementL ${alpha}, IndexL ${idx}`);
-// });
+alphabets.forEach(function (alpha, idx) {
+    // alpha : currentValue를 의미 = 반복하고 있는 현재 요소
+    // idx : currentValue의 인덱스 (위치)
+    console.log(`Element: ${alpha}, Index: ${idx}`);
+});
 
 alphabets.forEach(function (alpha, idx, arr) {
     // alpha : currentValue를 의미 = 반복하고 있는 현재 요소
@@ -97,9 +97,14 @@ const doubleNumbers = numbers.map(function(num){
 console.log(`doubleNumbers >>>>>>>>>>> ${doubleNumbers}`); // [2, 4, 6, 8, 10]
 
 // +) 추가 설명
-// 구체적으로 콜백 함수는 map() 메서드에 인수로 전달됨
+// 구체적으로 콜백 함수는 map() 메서드에 인수로 전달됨 // 인수: 함수나 메서드 호출 시 전달되는 입력값
 // 각 요소를 처리하는 함수로서 배열의 각 요소를 순회할 때마다 호출
-// 이 콜백 함수는 배열의 각 요소를 인자(num)로 받아서 원하는 작업을 수행하고 그 결과를 반환
+// 이 콜백 함수는 배열의 각 요소를 인자(num)로 받아서 원하는 작업을 수행하고 그 결과를 반환 // 인자 : 인자(arguments)는 함수가 호출될 때 함수에 전달되는 값
+//인자(Arguments)와 인수(Parameters)의 차이
+// 인자(Arguments): 함수를 호출할 때 실제로 전달하는 값을 말합니다.
+// 인수(Parameters): 함수를 정의할 때 사용하는 변수 이름을 의미합니다.
+
+
 
 // num 은 콜백함수의 매개변수이다
 // = 이는 현재 처리 중인 배열의 요소를 나타낸다
@@ -128,7 +133,7 @@ const pracNumbers2 = numbers.find(function (num){
 // pracNumbers = [2]
 // 홀수만 있을 경우 -> 조건 불만족! -> undefined
 
-// + 욥션 ) 객체에서 반복문 사용하기!
+// + 옵션 ) 객체에서 반복문 사용하기!
 // for ... in 반복문
 // 객체의 "key"를 반복 할 수 있는 구문
 
@@ -148,5 +153,5 @@ console.log(dog.info);
 for (let k in dog){
     console.log(`key: ${k},  value: ${dog[k]}`); // 객체의 각 속성(key, value)에 대해 실행할 코드
     // key : k - 각 속성의 키를 저장하는 변수 (사용자 정의 변수)
-    // value : dog[k]
+    // value : dog[k] -> 키의 '값'에 접근하는 방법 (객체의 속성을 대괄호 표기법으로 접근)
 }

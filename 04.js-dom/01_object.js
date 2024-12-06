@@ -52,7 +52,7 @@ console.log(`obj: ${JSON.stringify(obj)}, obj2: ${JSON.stringify(obj2)}`);
 // (가볍게)
 // JSON.stringify는 "JS 객체 또는 값"을 JSON 형식의 문자열로 변환하는 메서드
 // JSON은 데이털르 표현하는 (경량의) 데이터 형식, 키와 값 쌍으로 표현하는데 주로 사용.
-// - 주로 데이털르 네트워크 요청이나, 파일 저자엥 적합한 문자열로 변환 / ex) 서버로 보낼떄
+// - 주로 데이털 네트워크 요청이나, 파일 저장에 적합한 문자열로 변환 / ex) 서버로 보낼떄
 
 obj.five= 5; // 객체에 데이터값 할당
 console.log(obj, obj2);

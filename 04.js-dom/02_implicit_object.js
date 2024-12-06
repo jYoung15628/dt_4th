@@ -91,15 +91,4 @@ console.log(Math.floor(Math.random()* (22 - 20 + 1 ))+ 20);
 // Q)실습
 console.log(Math.floor(Math.random()* 11));
 
-// Math.floor(Math.random() * (5 - 2 + 1)) + 2;
-// // = Math.floor(Math.random() * 4) + 2 ; // 2~ 5
-/**
- * function rand(min, max) {
-   return Math.floor(Math.random() * (max - min + 1)) + min;
-   }
-
-   document.writeln(rand(1, 3));
-   document.writeln(rand(77, 88));
- */
-
 

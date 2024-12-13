@@ -78,6 +78,7 @@ console.log(h1.classList.contains('add-h1')); //false
 h1.classList.toggle('add-h1');
 console.log(h1);
 
+
 ///////////////////////////////
 
 
@@ -151,7 +152,7 @@ container.append(p2, p3) // 여러개 추가가 가능
 
 // #7. 요소삭제
 //  x.remove() : x 요소 자체를 삭제
-//  x.removeChile(y) : x의 자식 요소인 y가 삭제
+//  x.removeChild(y) : x의 자식 요소인 y가 삭제
 // 둘 다 메모리에서 즉시 삭제되지 않으니, 참조를 유지하면 재활용이가능하다
 const firstLi = document.querySelector('li'); // queryselector 첫번째 요소만 가져옴
 console.log(firstLi); // 짱구

@@ -123,3 +123,13 @@ html {
 .btn.error {
   background-color: var(--color-error);
 }
+
+.a {
+  --jinyoung: red;
+  color:  blue; 
+}
+
+.b {
+  color: black;
+  background-color: var(--jinyoung);
+}

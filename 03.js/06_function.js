@@ -114,7 +114,7 @@ const square1 = (x) => x ** 2 ;
 // ** 뒤에 무조건 값(제곱값)을 넣어줘야 함 !
 console.log(square1(3));
 const square = (x, y) => x * y;
-console.log(square(3,4)); //9
+console.log(square(3,4)); //12
 
 // 일반형 (여러줄)
 // function triangle(base, height){

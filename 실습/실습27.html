@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery 실습1</title>
+    <!-- jQueru CDN 불러오기 -->
+     <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+
+  </head>
+  <body>
+    <!-- 이미지 초기 설정 -->
+    <img id="fruitImage" src="./toystory.jpg" alt="과일" width="230px" height="200px" />
+    <br />
+    <!-- 각 버튼은 'changeImg' 함수에 다른 값을 전달 -->
+    <button onclick="changeImg('apple')">사과</button>
+    <button onclick="changeImg('banana')">바나나</button>
+    <button onclick="changeImg('grape')">포도</button>
+    <button onclick="changeImg('peach')">복숭아</button>
+
+    <script>
+        // function changeImg(fruit) {
+        //     // 전달받은 fruit에 맞는 이미지를 src로 설정
+        //     if (fruit === 'apple') {
+        //         document.getElementById('fruitImage').src = './apple.jpg';
+        //     } else if (fruit === 'banana') {
+        //         document.getElementById('fruitImage').src = './banana.jpg';
+        //     } else if (fruit === 'grape') {
+        //         document.getElementById('fruitImage').src = './grape.jpg';
+        //     } else if (fruit === 'peach') {
+        //         document.getElementById('fruitImage').src = './peach.jpg';
+        //     }
+        // }
+        function changeImg(name){
+            $('img').attr('src',`./img/${img}.jpg`);
+        }
+        
+    </script>
+</html>

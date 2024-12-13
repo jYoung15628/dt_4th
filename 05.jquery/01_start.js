@@ -15,7 +15,7 @@
 console.log($('#div1')); //ce {0: div#div1, length: 1}
 // ce : jQuery 객체가 내부적으로 사용하는 이름.
 // jQuery 객체를 생성하고 초기화하는 함수.
-
+ 
 // #1. 순수 자바스크립트
 function submitJS() {
     // 요소 선택
@@ -73,3 +73,5 @@ colorsJquery.on('click', function () {
     console.log('this >>>> ', $(this));
     $(this).css('background-color', 'skyblue');
 });
+
+//$(this)의 역할: 이벤트가 발생한 특정 요소를 jQuery 객체로 감싸, 스타일 변경 같은 jQuery 메서드를 적용할 수 있게 합니다

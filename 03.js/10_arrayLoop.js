@@ -52,7 +52,7 @@ for (let a =0; a < arr.length; a++){
 // - 일반적으로 배열을 순회하면서 각 요소에 대해 동일한 작업을 수행할 때 사용
 // - 각 요소에 대해 함수가 호출 될 때마다 , 해당 요소가 함수의 인자로 전달된다
 
-const alphabets = ['a', 'b', 'c', 'd'];
+const alphabets = ['a', 'b', 'c', 'd']; 
 
 alphabets.forEach(function(alpha){
     // alpha : currentValue를 의미 = 반복하고 있는 현재 요소

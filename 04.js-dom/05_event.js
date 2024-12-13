@@ -10,7 +10,7 @@
 //  #1. onXXX 속성으로 등록
 function clickH1(){
     alert('제목 클릭! 함수 이용');
-}
+};
 
 //  #2. addEventListener
 
@@ -139,7 +139,7 @@ todoForm.addEventListener('submit', (e) => {
     if (newTodo !== '') {
         const newTodoLi = document.createElement('li'); // <li></li>
         newTodoLi.append(newTodo); // <li>input 입력 값</li>
-        todos.append(newTodoLi);
+        todos.append(newTodoLi); // 새로 만든 <li> 태그를 기존의 목록(todos)에 추가합니다. 새 <li>가 기존 목록의 마지막 자식으로 추가됩니다.
     }
 
     // input 창 초기화
@@ -147,7 +147,7 @@ todoForm.addEventListener('submit', (e) => {
 });
 
 // change
-// : input 요소에 변경이 일어나고 다른 요솔르 클릭해서
+// : input 요소에 변경이 일어나고 다른 요소를 클릭해서
 //  input이 포커스 아웃(blur) 처리 되었을 때 일어나는 이벤트
 
 const chgInput = document.querySelector('#change-input');

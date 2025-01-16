@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 
 
 export const FuncComponent = () => {
-    const [number, setNumber] = useState(0);
+    const [number, setNumber] = useState(0); // 상태/함수
 
     // #1. 인자 X
     const increase = () => {

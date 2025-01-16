@@ -18,12 +18,6 @@ function App() {
     const name = 'damon';
     const student = 'sesac';
 
-    const name1 = '로이';
-    const animal = '강아지';
-
-    const a = '8';
-    const b = '5';
-
     const checkPerson = () => {
         if (name === 'damon') {
             return '리더입니다.';
@@ -39,15 +33,6 @@ function App() {
         color: 'blue',
         fontSize: '48px',
     };
-
-    const title = {
-      backgroundColor: 'orange',
-      color: 'brown',
-      fontSize: '30px',
-    }
-
-  
-  
     return (
         <div className="App">
             {/* JSX 문법 */}
@@ -61,30 +46,6 @@ function App() {
                 - {} 로 감싸면 js 표현식 사용 가능
                 - {} 안에서 삼항 연산자 사용 가능 (if, for문 사용 불가 x)
             */}
-            {3 + 5 === 8 ? '정답입니다!' : '오답입니다!'}
-
-            {a > b && 'a가 b보다 큽니다'}
-
-            <div style={title}>Hello world!</div>
-            <div>
-                아이디 : <input type="text"></input>
-            </div>
-            <div>
-                비밀번호 : <input type="password"></input>
-            </div>
-            <h2
-                style={{
-                    textAlign: 'left',
-                    width: '500px',
-                    border: '3px dashed',
-                    borderColor: 'green',
-                    textDecorationLine: 'underline',
-                }}
-            >
-                제 반려동물의 이름은<u>{name1}</u>입니다<br></br> <u>{name1}</u>
-                는 <u>{animal}</u>입니다
-            </h2>
-
             <div>{name} 안녕?</div>
             <div>
                 {student === 'sesac' ? (

@@ -1,6 +1,6 @@
 import React from 'react';
 import apple from '../assets/apple.jpg';
-import banana from '../assets/banana.jpg';
+import banana from '../assets/Banana.jpg';
 import peach from '../assets/peach.jpg';
 
 // #1. (정적) import 방식으로 가져와서 객체에 저장.

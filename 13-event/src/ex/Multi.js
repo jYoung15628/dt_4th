@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import image from '../assets/apple.jpg';
-import image1 from '../assets/banana.jpg';
+import image1 from '../assets/Banana.jpg';
 import image2 from '../assets/peach.jpg'
 
 export default function Multi() {

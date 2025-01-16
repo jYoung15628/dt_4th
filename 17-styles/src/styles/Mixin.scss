@@ -1,0 +1,50 @@
+@mixin circle($color, $size, $top, $left) {
+  width: $size;
+  height: $size;
+  background-color: $color;
+  border-radius: 50%;
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+@mixin move($name, $move) {
+  @keyframes #{$name} {
+    0% {
+      transform: translate(0, 0); 
+    }
+    25% {
+      transform: translate($move, 0); 
+    }
+    50% {
+      transform: translate($move, $move); 
+    }
+    75% {
+      transform: translate(0, $move);
+    }
+    100% {
+      transform: translate(0, 0); 
+    }
+  }
+
+  animation: #{$name} 4s ease-in-out infinite;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.circle-p {
+  @include circle(pink, 40px, 10px, 10px);
+  @include move(move-p, 90px); 
+}
+
+.circle-y {
+  @include circle(yellow, 40px, 60px, 10px);
+  @include move(move-y, 180px);
+}
